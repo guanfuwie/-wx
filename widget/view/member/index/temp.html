@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <link href="../../../sdk/ui.css" rel="stylesheet">
+        <style>
+body{background:#f3f3f3;}
+.memHead{background: url(head.jpg) no-repeat;background-size: cover;color:#fff;}
+.pac{position: absolute;left:25%; top:50%; width:50%;height:10em;margin-top: -6.2em;
+ text-align: center;}
+.avat{display: block;margin:0 auto .2em;width:6.4em;height: 6.4em;border:2px solid #fff;
+     border-radius: 50%;overflow: hidden; background-size: cover;}
+.avat img{width: 100%;}
+
+.memHead ._tabs{position: absolute;left:0;bottom:0;width:100%;height:3em;line-height: 3em;
+color:#fff;background:rgba(0,0,0,.4);}
+.memHead ._item{float:left;width:33.3%;text-align: center;box-sizing:border-box;border-left:1px solid #ccc;}
+.memHead ._item:first-child{border-left:0;}
+.memHead .ion{font-size:1.5em;margin-left: 0;}
+.item-icon-left.item-icon-right .ion:last-child{font-size:1.2em;}
+
+        </style>
+    </head>
+    <body class="flex-col">
+        <div class="flex-1 scroll_cont">
+            <div class="memHead">
+                <div class="rect-5625">
+                    <div class="pac">
+                        <div class="avat align-center"><img id="avat"></div>
+                        <p id="usern"></p>
+                        <p>我的积分：<span id="score"></span>分</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="list">
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe694;</i>我的消息
+                    <i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe641;</i>我的收藏
+                    <i class="ion">&#xe610;</i>
+                </div>
+            </div>
+            <div class="list">
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe791;</i>我的订单
+                    <div class="item-note">查看我的所有订单</div>
+                    <i class="ion">&#xe610;</i>
+                </div>
+                <div class="item item-lite">
+                    <ul class="flex-row tabs orderFlagList" id="orderFlagList">
+                        <li class="flex-1 tab-item" data-flag="1"><i class="ion">&#xe66a;</i>待付款<span class="badge"></span></li>
+                        <li class="flex-1 tab-item" data-flag="2"><i class="ion">&#xe66a;</i>待发货<span class="badge"></span></li>
+                        <li class="flex-1 tab-item" data-flag="3"><i class="ion">&#xe66a;</i>待收货<span class="badge"></span></li>
+                        <li class="flex-1 tab-item" data-flag="4"><i class="ion">&#xe66a;</i>待评价<span class="badge"></span></li>
+                    </ul>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe649;</i>交易评价
+                    <i class="ion">&#xe610;</i>
+                </div>
+            </div>
+            <div class="list">
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe658;</i>收货地址
+                    <div class="item-note">收货地址管理</div>
+                    <i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe634;</i>个人资料
+                    <div class="item-note">个人资料管理</div>
+                    <i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe66a;</i>我的积分<i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe650;</i>安全设置<i class="ion">&#xe610;</i>
+                </div>
+            </div>
+            <div class="list">
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe668;</i>邀请好友<i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                   <i class="ion">&#xe6af;</i>关于我们<i class="ion">&#xe610;</i>
+                </div>
+                <div active class="item item-icon-left item-icon-right">
+                    <i class="ion">&#xe62c;</i>意见反馈<i class="ion">&#xe610;</i>
+                </div>
+             </div>
+        </div>
+        
+    </body>
+    <script src="../../../sdk/loader.js" data-script="script"> </script>
+</html>

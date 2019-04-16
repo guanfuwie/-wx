@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../../sdk/ui.css" rel="stylesheet">
+</head>
+
+<body class="flex-col">
+    <div class="head myhead">
+        <div class="btn" id="goBack">
+            <i class="ion">&#xe651;</i>
+        </div>
+        <div class="title" id="headTitle">扩展插件</div>
+    </div>
+    <div class="flex-1 scroll_cont" id="view">
+        <textarea class="hide" template>
+            <div class="list">
+                <!-- for: ${data} as ${plugin} -->
+                <!-- var: str = JSON.stringify(${plugin}) -->
+                <div class="item item-icon-right" data-str="${str}" active>
+                    ${plugin.showName}
+                    <!-- if: ${plugin.isDone} -->
+                    <i class="ion">&#xe610;</i>
+                    <!-- else -->
+                    <i class="ion">&#xe60b;</i>
+                    <!-- /if -->
+                </div>
+                <!-- /for -->
+            </div>
+        </textarea>
+    </div>
+</body>
+<script src="../../../sdk/loader.js" data-script="script"> </script>
+</html>

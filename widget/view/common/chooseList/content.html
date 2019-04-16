@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <link href="../../../sdk/ui.css" rel="stylesheet">
+        <style>
+.chooseListHookMulti.active .ion{visibility: visible;color:#999;}
+        </style>
+    </head>
+    <body>
+        <div class="list" id="storeList">
+        <textarea class="hide" template>
+        <!-- for: ${data} as ${store} -->
+        <!-- if: ${store.hasSub} != 1 -->
+            <!-- if: ${store.multi} -->
+            <div class="item item-checkbox radio-primary chooseListHookMulti" data-id="${store.id}">
+                <label class="checkbox checkbox-primary">
+                    <input type="checkbox" name="checkbox">
+                </label>
+                ${store.name}
+            </div>
+            <!-- else -->
+            <label class="item item-radio radio-primary chooseListHook" data-id="${store.id}">
+                <input type="radio" name="radio">
+                ${store.name}
+                <!-- if: ${store.note} -->
+                <div class="item-note">${store.note}</div>
+                <!-- /if -->
+            </label>
+            <!-- /if -->
+        <!-- else -->
+        <label class="item item-icon-right" data-id="${store.id}">
+            <div class="item-body">
+               ${store.name}
+            </div>
+            <i class="ion">&#xe610;</i>
+        </label>
+        <!-- /if -->
+        <!-- /for -->
+        </textarea>
+    </div>
+</body>
+<script src="../../../sdk/loader.js" data-script="content"> </script>
+</html>

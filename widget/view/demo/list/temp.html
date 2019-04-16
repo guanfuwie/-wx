@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../../sdk/ui.css" rel="stylesheet">
+    
+</head>
+
+<body class="flex-col">
+    <div class="head">
+        <div class="btn" id="goBack">
+            <i class="ion">&#xe651;</i>
+        </div>
+        <div class="title">列表演示</div>
+    </div>
+    <div class="flex-1 flex-col scroll_cont">
+        <div class="list">
+            <div class="item item-divider">普通列表</div>
+            <div class="item">
+                item1
+            </div>
+            <div class="item">
+                item2
+            </div>
+        </div>
+        <div class="list">
+            <div class="item item-divider">带图标列表</div>
+            <div class="item item-icon-left" openView>
+                <i class="ion">&#xe7bd;</i> Check mail
+            </div>
+            <div class="item item-icon-left item-icon-right" openView>
+                <i class="ion">&#xe61d;</i> Call Ma
+                <i class="ion">&#xe6be;</i>
+            </div>
+            <div class="item item-icon-left" openView href="#">
+                <i class="ion">&#xe668;</i> Record album
+                <span class="item-note">Grammy</span>
+            </div>
+            <div class="item item-icon-left" openView>
+                <i class="ion">&#xe63f;</i> Friends
+                <span class="item-note"><span class="badge">9</span></span>
+            </div>
+            <div class="item item-button-right">
+                Call Ma
+                <button class="btn btn-primary">
+                    Button
+                </button>
+            </div>
+        </div>
+        <div class="list">
+            <a class="item item-avatar" href="#">
+                <div class="item-image"><img src="../../../res/img/placeholder.jpg"></div>
+                <h2>Venkman</h2>
+                <p>Back off, man. I'm a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+                <div class="item-image"><img src="../../../res/img/placeholder.jpg"></div>
+                <h2>Venkman</h2>
+                <p>Back off, man. I'm a scientist.</p>
+            </a>
+        </div>
+        <div class="list">
+            <a class="item item-thumbnail" href="#">
+                <div class="item-image"><img src="../../../res/img/placeholder.jpg"></div>
+                <h2>Pretty Hate Machine</h2>
+                <p>Nine Inch Nails</p>
+            </a>
+            <a class="item item-thumbnail" href="#">
+                <div class="item-image"><img src="../../../res/img/placeholder.jpg"></div>
+                <h2>Pretty Hate Machine</h2>
+                <p>Nine Inch Nails</p>
+            </a>
+        </div>
+        <div class="list card">
+            <div class="item">
+                card item1
+            </div>
+            <div class="item">
+                card item2
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="../../../sdk/loader.js" data-script="script"> </script>
+
+</html>

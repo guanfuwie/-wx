@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<link href="../../../sdk/ui.css" rel="stylesheet">
+		<style>
+			/* 默认隐藏按钮 */
+.member-set{display: none;}
+
+.member-head .member-set{display: inline-block;}
+
+
+		</style>
+	</head>
+	<body class="flex-col">
+		<header class="head" id="head">
+			<div class="btn" id="offcanvas">
+	            <i class="ion">&#xe600;</i>
+	        </div>
+	        <div class="title" id="title">HybridStart 功能示例</div>
+	        <div class="btn member-set" id="systemSet">
+	            <i class="ion">&#xe667;</i>
+	        </div>
+	    </header>
+		<div class="flex-1 flex-col scroll_cont" id="view">
+			
+		</div>
+		<footer class="foot border-t">
+			<div class="tabs tabs-ion-top">
+				<div active class="tab-item cur" id="home">
+					<i class="ion">&#xe64a;</i>
+					<p>示例</p>
+				</div>
+				<div active class="tab-item" id="product">
+					<i class="ion">&#xe6bb;</i>
+					<p>产品</p>
+				</div>
+				<div active class="tab-item" id="discover">
+					<i class="ion">&#xe66a;</i>
+					<p>发现</p>
+				</div>
+				<div active class="tab-item" id="member">
+					<i class="ion">&#xe634;</i>
+					<p>我的</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="../../../sdk/loader.js" data-script="script"> </script>
+</html>

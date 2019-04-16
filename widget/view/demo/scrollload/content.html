@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../../sdk/ui.css" rel="stylesheet">
+</head>
+
+<body class="flex-col scroll_cont">
+    <div id="view">
+        <textarea class="hide" template>
+            <!--for: ${data} as ${el}-->
+            <div class="card">
+                <div class="card-head">
+                    <div class="card-title">
+                        ${el.name}
+                        <div class="item-note">
+                        ${el.number}
+                        </div>
+                    </div>
+                </div>
+                <div class="item item-body">
+                    This is a basic Card which contains an item that has wrapping text.
+                </div>
+            </div>     
+            <!--/for-->
+        </textarea>
+    </div>
+</body>
+<script src="../../../sdk/loader.js" data-script="content"> </script>
+
+</html>
